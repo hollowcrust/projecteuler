@@ -577,14 +577,8 @@ int main() {
 	node a[513];
 	ll len = 513;
 	forn(i,0,513) {
-		cin >> x >> y >> z;
-		if(x < y) {
-			a[i].x = x;
-			a[i].y = y;
-			a[i].w = z;
-			sum += z;
-	 	}
-	 	if(x == y) cout << x << "\n";
+		cin >> a[i].x >> a[i].y >> a[i].w;
+		sum += a[i].w;
 	}
 	sort(a, a+len, check);
 	forn(i,0,len) {
